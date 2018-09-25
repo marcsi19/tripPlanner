@@ -5,10 +5,41 @@
   <title></title>
 </head>
 <body>
+
     <link rel="stylesheet" href="./style.css"></link>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <script src = './bundle.js' defer></script>
+  
     <div id = 'map'></div>
+    <div id = 'actions' >
+        <div id = 'choices' class = 'boxes'>   
+            <label for="hotel-select">Hotels</label>
+            <select id = 'hotels' class = 'drop-down'>
+                <option value="">--Please choose an option--</option>
+                <option value="">Ritz</option>
+                <option value="">--W</option>
+                <option value="">--Mondrian--</option>
+            <select>
+            <label for="restaurant-select">Restaurants</label>
+            <select id = 'restaurants' class = 'drop-down'>
+                <option value="">--Please choose an option--</option>
+            </select>
+            <label for="activities-select">Things to Do</label>
+            <select id = 'activities' class = 'drop-down'>
+                <option value="
+                ">--Please choose an option--</option>
+            </select>
+        </div>
+        <div id = 'itinerary' class = 'boxes'>
+                <div id = 'myhotels' class = 'drop-down'></div>
+                <div id = 'myrestaurants' class = 'drop-down'></div>
+                <div id = 'mytodo' class = 'drop-down'></div>
+
+        </div>
+    </div>
+
+
+   
 </body>
 </html>
 
