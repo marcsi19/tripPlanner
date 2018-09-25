@@ -1,4 +1,4 @@
-const mapbox = require("mapbox-gl");
+const mapboxgl = require("mapbox-gl");
 
 const iconURLs = {
     hotels: "http://i.imgur.com/D9574Cu.png",
@@ -12,7 +12,8 @@ markerDomEl.style.width = "32px";
 markerDomEl.style.height = "39px";
 markerDomEl.style.backgroundImage = `url(${iconURLs[type]})`;
 
-new mapboxgl.Marker(markerDomEl).setLngLat(coords);
+let coord = new mapboxgl.Marker(markerDomEl).setLngLat(coords);
+return coord;
 };
 
 module.exports = buildMarker;
